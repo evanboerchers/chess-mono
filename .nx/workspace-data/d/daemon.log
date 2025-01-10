@@ -1,0 +1,404 @@
+[NX Daemon Server] - 2025-01-09T00:31:45.108Z - Started listening on: /tmp/6e79d54b762ef8a7d713/d.sock
+[NX Daemon Server] - 2025-01-09T00:31:45.109Z - [WATCHER]: Subscribed to changes within: /home/evan/projects/chess-mono (native)
+[NX Daemon Server] - 2025-01-09T00:31:45.115Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:31:45.116Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:31:45.117Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:31:45.118Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:31:45.233Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/package-json' 112.53132700035349ms
+[NX Daemon Server] - 2025-01-09T00:31:45.235Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/js' 114.7374379998073ms
+[NX Daemon Server] - 2025-01-09T00:31:45.237Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 116.42672700015828ms
+[NX Daemon Server] - 2025-01-09T00:31:45.255Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 134.54510099999607ms
+[NX Daemon Server] - 2025-01-09T00:31:45.258Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T00:31:45.258Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.258Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.266Z - Time taken for 'loadNxPlugins' 138.80710599990562ms
+[NX Daemon Server] - 2025-01-09T00:31:45.275Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:31:45.275Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:31:45.276Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:31:45.278Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.278Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.278Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.281Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.281Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.281Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.293Z - Time taken for 'build-project-configs' 23.556164999958128ms
+[NX Daemon Server] - 2025-01-09T00:31:45.293Z - Time taken for '@nx/vite/plugin:createDependencies' 2.8095999998040497ms
+[NX Daemon Server] - 2025-01-09T00:31:45.328Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+      An error occurred while processing files for the @nx/jest/plugin plugin.
+    - packages/chess-core/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-core/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+    - packages/chess-server/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-server/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+[NX Daemon Server] - 2025-01-09T00:31:45.330Z - Time taken for 'total execution time for createProjectGraph()' 37.86351899988949ms
+[NX Daemon Server] - 2025-01-09T00:31:45.330Z - Done responding to the client null
+[NX Daemon Server] - 2025-01-09T00:31:45.330Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 210. Response time: 2.
+[NX Daemon Server] - 2025-01-09T00:31:45.347Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:31:45.348Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T00:31:45.348Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.348Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.357Z - Time taken for 'hash changed files from watcher' 0.16899099992588162ms
+[NX Daemon Server] - 2025-01-09T00:31:45.359Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.359Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.359Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.362Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.362Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.362Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.367Z - Time taken for 'build-project-configs' 10.060647999867797ms
+[NX Daemon Server] - 2025-01-09T00:31:45.368Z - Time taken for '@nx/vite/plugin:createDependencies' 1.6262860000133514ms
+[NX Daemon Server] - 2025-01-09T00:31:45.379Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+      An error occurred while processing files for the @nx/jest/plugin plugin.
+    - packages/chess-core/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-core/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+    - packages/chess-server/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-server/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+[NX Daemon Server] - 2025-01-09T00:31:45.381Z - Time taken for 'total execution time for createProjectGraph()' 12.362794999964535ms
+[NX Daemon Server] - 2025-01-09T00:31:45.381Z - Done responding to the client null
+[NX Daemon Server] - 2025-01-09T00:31:45.381Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 32. Response time: 2.
+[NX Daemon Server] - 2025-01-09T00:31:45.382Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-01-09T00:31:45.383Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:31:45.385Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T00:31:45.386Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.386Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:31:45.390Z - Time taken for 'hash changed files from watcher' 2.3651490001939237ms
+[NX Daemon Server] - 2025-01-09T00:31:45.392Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.392Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.392Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.394Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.394Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:31:45.394Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:31:45.399Z - Time taken for 'build-project-configs' 8.441589999943972ms
+[NX Daemon Server] - 2025-01-09T00:31:45.399Z - Time taken for '@nx/vite/plugin:createDependencies' 1.6635210001841187ms
+[NX Daemon Server] - 2025-01-09T00:31:45.409Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+      An error occurred while processing files for the @nx/jest/plugin plugin.
+    - packages/chess-core/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-core/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-core/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+    - packages/chess-server/jest.config.js: Cannot find module 'ts-jest'
+  Require stack:
+  - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+  - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+      Error: Cannot find module 'ts-jest'
+      Require stack:
+      - /home/evan/projects/chess-mono/packages/chess-server/jest.config.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/devkit/src/utils/config-utils.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/src/plugins/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/@nx/jest/plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/load-resolved-plugin.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/loader.js
+      - /home/evan/projects/chess-mono/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js
+          at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+          at Module._load (node:internal/modules/cjs/loader:920:27)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+          at require (node:internal/modules/cjs/helpers:110:18)
+          at Object.<anonymous> (/home/evan/projects/chess-mono/packages/chess-server/jest.config.js:1:37)
+          at Module._compile (node:internal/modules/cjs/loader:1254:14)
+          at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+          at Module.load (node:internal/modules/cjs/loader:1117:32)
+          at Module._load (node:internal/modules/cjs/loader:958:12)
+          at Module.require (node:internal/modules/cjs/loader:1141:19)
+[NX Daemon Server] - 2025-01-09T00:31:45.411Z - Time taken for 'total execution time for createProjectGraph()' 11.563105000182986ms
+[NX Daemon Server] - 2025-01-09T00:31:45.412Z - Done responding to the client null
+[NX Daemon Server] - 2025-01-09T00:31:45.412Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 26. Response time: 3.
+[NX Daemon Server] - 2025-01-09T00:33:56.199Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:33:56.199Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:34:09.892Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-01-09T00:34:09.892Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T00:34:09.993Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T00:34:09.993Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:34:09.993Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:34:09.998Z - Time taken for 'hash changed files from watcher' 0.11429300019517541ms
+[NX Daemon Server] - 2025-01-09T00:34:10.001Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:34:10.001Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:34:10.001Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:34:10.004Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:34:10.004Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:34:10.004Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:34:10.010Z - Time taken for 'build-project-configs' 11.096812000032514ms
+[NX Daemon Server] - 2025-01-09T00:34:10.010Z - Time taken for '@nx/vite/plugin:createDependencies' 1.9856420001015067ms
+[NX Daemon Server] - 2025-01-09T00:34:10.018Z - Time taken for 'total execution time for createProjectGraph()' 10.39738899981603ms
+[NX Daemon Server] - 2025-01-09T00:34:11.685Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T00:34:11.686Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-01-09T00:34:11.686Z - [WATCHER]: Stopping the watcher for /home/evan/projects/chess-mono (sources)
+[NX Daemon Server] - 2025-01-09T00:34:11.686Z - [WATCHER]: Stopping the watcher for /home/evan/projects/chess-mono (outputs)
+[NX Daemon Server] - 2025-01-09T00:39:16.381Z - Started listening on: /tmp/6e79d54b762ef8a7d713/d.sock
+[NX Daemon Server] - 2025-01-09T00:39:16.384Z - [WATCHER]: Subscribed to changes within: /home/evan/projects/chess-mono (native)
+[NX Daemon Server] - 2025-01-09T00:39:16.388Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:39:16.389Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:39:16.390Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:39:16.404Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:39:16.497Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/package-json' 104.33519100025296ms
+[NX Daemon Server] - 2025-01-09T00:39:16.507Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 114.70512000005692ms
+[NX Daemon Server] - 2025-01-09T00:39:16.509Z - Time taken for 'Load Nx Plugin: /home/evan/projects/chess-mono/node_modules/nx/src/plugins/js' 117.10118000023067ms
+[NX Daemon Server] - 2025-01-09T00:39:16.534Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 142.9120709998533ms
+[NX Daemon Server] - 2025-01-09T00:39:16.568Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T00:39:16.568Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:39:16.568Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T00:39:16.576Z - Time taken for 'loadNxPlugins' 177.22075099963695ms
+[NX Daemon Server] - 2025-01-09T00:39:16.593Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:39:16.593Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T00:39:16.593Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T00:39:16.596Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:39:16.596Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:39:16.596Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:39:16.598Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:39:16.598Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T00:39:16.598Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T00:39:16.697Z - Time taken for 'build-project-configs' 117.16356299910694ms
+[NX Daemon Server] - 2025-01-09T00:39:16.698Z - Time taken for '@nx/vite/plugin:createDependencies' 2.5122700007632375ms
+[NX Daemon Server] - 2025-01-09T00:39:16.743Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-01-09T00:39:16.743Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.744Z - Time taken for 'total for creating and serializing project graph' 352.80060299951583ms
+[NX Daemon Server] - 2025-01-09T00:39:16.744Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.744Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 353. Response time: 1.
+[NX Daemon Server] - 2025-01-09T00:39:16.751Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:39:16.751Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.752Z - Time taken for 'total for creating and serializing project graph' 0.20454799942672253ms
+[NX Daemon Server] - 2025-01-09T00:39:16.752Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.752Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-01-09T00:39:16.754Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-01-09T00:39:16.754Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:39:16.754Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.755Z - Time taken for 'total for creating and serializing project graph' 0.12793799955397844ms
+[NX Daemon Server] - 2025-01-09T00:39:16.755Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-01-09T00:39:16.755Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-01-09T00:39:23.700Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T00:39:23.700Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-01-09T00:39:23.701Z - Time taken for 'total for creating and serializing project graph' 0.24887400027364492ms
+[NX Daemon Server] - 2025-01-09T00:39:23.701Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-01-09T00:39:23.701Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-01-09T06:15:36.450Z - There are 3 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2025-01-09T09:15:29.701Z - There are 3 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2025-01-09T15:13:13.095Z - There are 3 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2025-01-09T17:33:33.661Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T17:33:33.663Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-09T18:13:13.097Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2025-01-09T21:16:26.463Z - There are 1 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2025-01-09T23:48:59.724Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T23:48:59.726Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-01-09T23:48:59.729Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-01-09T23:48:59.730Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-01-09T23:48:59.733Z - Time taken for 'total for creating and serializing project graph' 0.6195220053195953ms
+[NX Daemon Server] - 2025-01-09T23:48:59.733Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-01-09T23:48:59.733Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-01-09T23:48:59.733Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX Daemon Server] - 2025-01-09T23:48:59.775Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-01-09T23:48:59.775Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-01-09T23:48:59.775Z - Handled HASH_TASKS. Handling time: 11. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:48:59.783Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-01-09T23:48:59.783Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-01-09T23:48:59.783Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:49:00.317Z - [WATCHER]: node_modules/template-vite-ts/vite/config.prod.mjs.timestamp-1736466540264-dccfd4d83b217.mjs was created or restored
+[NX Daemon Server] - 2025-01-09T23:49:00.318Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:00.419Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-09T23:49:00.419Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T23:49:00.419Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-09T23:49:00.425Z - Time taken for 'hash changed files from watcher' 0.6694659888744354ms
+[NX Daemon Server] - 2025-01-09T23:49:00.465Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T23:49:00.465Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T23:49:00.465Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:49:00.467Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-09T23:49:00.467Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-09T23:49:00.468Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-01-09T23:49:00.474Z - Time taken for 'build-project-configs' 49.126653999090195ms
+[NX Daemon Server] - 2025-01-09T23:49:00.479Z - Time taken for '@nx/vite/plugin:createDependencies' 7.2249899953603745ms
+[NX Daemon Server] - 2025-01-09T23:49:00.490Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-01-09T23:49:00.490Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-01-09T23:49:00.491Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-01-09T23:49:00.491Z - Time taken for 'total execution time for createProjectGraph()' 13.009727999567986ms
+[NX Daemon Server] - 2025-01-09T23:49:01.036Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:01.090Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:01.143Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-01-09T23:49:01.143Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-01-09T23:49:01.143Z - Handled RECORD_OUTPUTS_HASH. Handling time: 14. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:49:01.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:02.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:11.620Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-01-09T23:49:11.621Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-01-09T23:49:11.621Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-01-09T23:49:11.625Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-09T23:49:11.638Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX Daemon Server] - 2025-01-09T23:49:11.638Z - Done responding to the client handleRecordTaskRuns
+[NX Daemon Server] - 2025-01-09T23:49:11.638Z - Handled RECORD_TASK_RUNS. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:49:11.639Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX Daemon Server] - 2025-01-09T23:49:11.639Z - Done responding to the client handleGetFlakyTasks
+[NX Daemon Server] - 2025-01-09T23:49:11.639Z - Handled GET_FLAKY_TASKS. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-01-09T23:49:11.642Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-01-10T00:02:44.206Z - [WATCHER]: packages/chess-client was deleted
+[NX Daemon Server] - 2025-01-10T00:02:44.206Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-10T00:02:44.407Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-10T00:02:44.407Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-10T00:02:44.407Z - [REQUEST]: packages/chess-client
+[NX Daemon Server] - 2025-01-10T00:02:44.412Z - Time taken for 'hash changed files from watcher' 0.1575630009174347ms
+[NX Daemon Server] - 2025-01-10T00:02:44.415Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:44.415Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:44.415Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-10T00:02:44.418Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:44.418Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:44.418Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-10T00:02:44.427Z - Time taken for 'build-project-configs' 12.507991999387741ms
+[NX Daemon Server] - 2025-01-10T00:02:44.429Z - Time taken for '@nx/vite/plugin:createDependencies' 5.33100700378418ms
+[NX Daemon Server] - 2025-01-10T00:02:44.451Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-01-10T00:02:44.451Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-01-10T00:02:44.451Z - Time taken for 'total execution time for createProjectGraph()' 20.66261899471283ms
+[NX Daemon Server] - 2025-01-10T00:02:46.951Z - [WATCHER]: packages/chess-core was deleted
+[NX Daemon Server] - 2025-01-10T00:02:46.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-10T00:02:47.352Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-10T00:02:47.352Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-10T00:02:47.352Z - [REQUEST]: packages/chess-core
+[NX Daemon Server] - 2025-01-10T00:02:47.356Z - Time taken for 'hash changed files from watcher' 0.07387799024581909ms
+[NX Daemon Server] - 2025-01-10T00:02:47.359Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:47.359Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-01-10T00:02:47.359Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-01-10T00:02:47.371Z - Time taken for 'build-project-configs' 14.090725004673004ms
+[NX Daemon Server] - 2025-01-10T00:02:47.372Z - Time taken for '@nx/vite/plugin:createDependencies' 2.87771899998188ms
+[NX Daemon Server] - 2025-01-10T00:02:47.385Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-01-10T00:02:47.385Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-01-10T00:02:47.385Z - Time taken for 'total execution time for createProjectGraph()' 11.731109991669655ms
+[NX Daemon Server] - 2025-01-10T00:02:51.201Z - [WATCHER]: packages/chess-server was deleted
+[NX Daemon Server] - 2025-01-10T00:02:51.201Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-01-10T00:02:52.002Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-01-10T00:02:52.002Z - [REQUEST]: 
+[NX Daemon Server] - 2025-01-10T00:02:52.002Z - [REQUEST]: packages/chess-server
+[NX Daemon Server] - 2025-01-10T00:02:52.006Z - Time taken for 'hash changed files from watcher' 0.07105699181556702ms
+[NX Daemon Server] - 2025-01-10T00:02:52.024Z - Time taken for 'build-project-configs' 6.214415997266769ms
+[NX Daemon Server] - 2025-01-10T00:02:52.025Z - Time taken for '@nx/vite/plugin:createDependencies' 2.8427660018205643ms
+[NX Daemon Server] - 2025-01-10T00:02:52.034Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-01-10T00:02:52.034Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-01-10T00:02:52.034Z - Time taken for 'total execution time for createProjectGraph()' 18.918377995491028ms

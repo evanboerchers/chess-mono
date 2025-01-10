@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx run-many --target=build --all",
+    "startTime": "2025-01-09T23:48:59.776Z",
+    "endTime": "2025-01-09T23:49:11.635Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@evanboerchers/chess-core:build",
+      "target": "build",
+      "projectName": "@evanboerchers/chess-core",
+      "hash": "11967856933811223163",
+      "startTime": "2025-01-09T23:48:59.785Z",
+      "endTime": "2025-01-09T23:49:01.147Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "template-vite-ts:build",
+      "target": "build",
+      "projectName": "template-vite-ts",
+      "hash": "13711546512629884070",
+      "startTime": "2025-01-09T23:48:59.785Z",
+      "endTime": "2025-01-09T23:49:11.634Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
