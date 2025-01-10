@@ -1,9 +1,0 @@
-
-> template-vite-ts@1.3.1 build
-> vite build --config vite/config.prod.mjs
-
-Building for production...
----------------------------------------------------------
-❤️❤️❤️ Tell us about your game! - games@phaser.io ❤️❤️❤️
----------------------------------------------------------
-✨ Done ✨

@@ -7,3 +7,12 @@
 [submodule "chess-client"]
 	path = packages/chess-client
 	url = git@github.com:evanboerchers/chess-client.git
+[submodule "packages/chess-core"]
+	path = packages/chess-core
+	url = git@github.com:evanboerchers/chess-core.git
+[submodule "packages/chess-server"]
+	path = packages/chess-server
+	url = git@github.com:evanboerchers/chess-server.git
+[submodule "packages/chess-client"]
+	path = packages/chess-client
+	url = git@github.com:evanboerchers/chess-client.git
