@@ -16,3 +16,9 @@
 [submodule "packages/chess-client"]
 	path = packages/chess-client
 	url = git@github.com:evanboerchers/chess-client.git
+[submodule "packages.chess-core"]
+	branch = main
+[submodule "packages.chess-server"]
+	branch = main
+[submodule "packages.chess-client"]
+	branch = main
