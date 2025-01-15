@@ -1,5 +1,5 @@
 {
-  "name": "chess-mono",
+  "name": "@evanboerchers/chess-mono",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,5 +25,12 @@
   "workspaces": [
     "libs/**",
     "packages/**"
-  ]
+  ],
+  "pnpm": {
+    "overrides": {
+      "@evanboerchers/chess-core": "workspace:*",
+      "@evanboerchers/chess-server": "workspace:*",
+      "@evanboerchers/chess-client": "workspace:*"
+    }
+  }
 }
