@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "nx run-many --target=deploy --all",
     "build": "nx run-many --target=build --all",
     "test": "nx run-many --target=test --all",
     "nx:reset": "nx reset",

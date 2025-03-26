@@ -11,6 +11,12 @@ This is the parent mono repo used for managing, developing and building a chess 
 
 ## To Do
 
-- have auto setup
-    - git submodules install
-    - build all repos
+- hookup nx to projects get stack running all together
+- figure out web service
+- figure out deployment
+- chess-client
+    - castle
+    - testing
+        - game end
+        - online play
+    - themeing
