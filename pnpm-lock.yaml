@@ -44,8 +44,8 @@ importers:
         specifier: workspace:*
         version: link:../chess-core
       phaser:
-        specifier: ^3.80.1
-        version: 3.87.0
+        specifier: ^3.88.2
+        version: 3.88.2
       prettier:
         specifier: ^3.3.3
         version: 3.4.2
@@ -2895,8 +2895,8 @@ packages:
   pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
 
-  phaser@3.87.0:
-    resolution: {integrity: sha512-AyI1b3T5fp05gzf6WUmu2FNqaZL+Y7w88yBRLf7YZXF9bncUSHpnDrupnTGoPqy/RKHRLBcay7zWeqQ2wiMWcw==}
+  phaser@3.88.2:
+    resolution: {integrity: sha512-UBgd2sAFuRJbF2xKaQ5jpMWB8oETncChLnymLGHcrnT53vaqiGrQWbUKUDBawKLm24sghjKo4Bf+/xfv8espZQ==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -6841,7 +6841,7 @@ snapshots:
 
   pathval@1.1.1: {}
 
-  phaser@3.87.0:
+  phaser@3.88.2:
     dependencies:
       eventemitter3: 5.0.1
 
