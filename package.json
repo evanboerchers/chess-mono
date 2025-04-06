@@ -7,6 +7,9 @@
     "deploy": "nx run-many --target=deploy --all",
     "build": "nx run-many --target=build --all",
     "test": "nx run-many --target=test --all",
+    "docker:up": "nx run-many --target=docker:up --all",
+    "docker:down": "nx run-many --target=docker:down --all",
+    "docker:restart": "nx run-many --target=docker:restart --all",
     "nx:reset": "nx reset",
     "nx:graph": "nx graph"
   },
